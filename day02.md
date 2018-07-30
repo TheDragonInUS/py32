@@ -65,7 +65,32 @@
   print("程序结束")
   ```
 (6). 
+```
 
+money = int(input("请输入钱数："))
+time_z = int(input("请输入距离签卡时间："))
+if time_z >= 50:
+	if money > 25:
+		print("可以打车")
+	if money > 4:
+		print("可以做地铁")
+	if money > 1:
+		print("坐公交最省钱")
+	
+elif 50 >= time_z > 38:
+	if money > 25:
+		print("可以打车")
+	if money > 4:
+		print("做地铁最省钱")
+
+	
+elif 38 >= time_z > 25:
+	if money > 25:
+		print("打车还有救")
+
+else:
+	print("今天会迟到")
+```
 
 
 
