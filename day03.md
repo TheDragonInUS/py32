@@ -69,24 +69,17 @@ for i in range(100, 1000):
         print(i)
 ```
 
-
-
 3.
 
 ```py
 for i in range(101, 201):
 
-	for yin_shu in range(2, i):
-		if i % yin_shu == 0:
-			break
-	else:
-		print(i)
-
+    for yin_shu in range(2, i):
+        if i % yin_shu == 0:
+            break
+    else:
+        print(i)
 ```
-
-
-
-
 
 4.
 
