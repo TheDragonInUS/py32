@@ -32,64 +32,58 @@
    肥胖：28-32  
    非常肥胖, 高于32  
    请根据如上，条件写出一段代码，要求实现用户输入身高和体重，输出结果相应结果，并给出相应意见（自己阐述）。
+
 5. 要求使用for 循环和continue 打印1-100中的奇数。
 
-
-
 ---
-
-
-
-
 
 参考答案：
 
 1. 
+
+
 ```py
-
 I = float(input("请输入当月利润(单位w元):"))
-
 bonus = 0
-
 if I <= 10:
-	bonus = I * 0.10
+    bonus = I  0.10
 elif 20 >I> 10:
-	bonus = 10 * 0.10 + (I-10)* 0.075
+    bonus = 10  0.10 + (I-10) 0.075
 elif 40 >I>= 20:
-	bonus = 10 * 0.10 + 10* 0.75 + (I-20)*0.05 
+    bonus = 10  0.10 + 10 0.75 + (I-20)0.05 
 elif 60 >I>= 40:
-	bonus = 10 * 0.10 + 10* 0.75 + 20*0.05 + (I-40) * 0.03
+    bonus = 10  0.10 + 10 0.75 + 200.05 + (I-40)  0.03
 elif 100 >I>= 60:
-	bonus = 10 * 0.10 + 10* 0.75 + 20*0.05 + 20 * 0.03 + (I-60)* 0.015
+    bonus = 10  0.10 + 10 0.75 + 200.05 + 20  0.03 + (I-60) 0.015
 elif 100 >I:
-	bonus = 10 * 0.10 + 10* 0.75 + 20*0.05 + 20 * 0.03 + 40 * 0.015 + (I-100) * 0.01
-
+    bonus = 10  0.10 + 10 0.75 + 200.05 + 20  0.03 + 40  0.015 + (I-100) * 0.01
 print("应发奖金%f " % bonus)
 ```
 
-2. 
 
-```py
-for i in range(100, 1000):
-	bai_wei = i // 100
-	shi_wei = (i-bai_wei*100) // 10
-	geg_wei = (i - bai_wei*100 - shi_wei * 10) // 1
-	# print(i, bai_wei, shi_wei, geg_wei)
-	if bai_wei**3 + shi_wei**3 + geg_wei**3 == i:
-		print(i)
-```
 
-3. 
 
-```py
-for i in range(101, 201):
 
-	for yin_shu in range(2, i):
-		if i % yin_shu == 0:
-			break
-	else:
-		print(i)
-```
+    2. 
+
+    ```py
+    for i in range(100, 1000):
+        bai_wei = i // 100
+        shi_wei = (i-bai_wei*100) // 10
+        geg_wei = (i - bai_wei*100 - shi_wei * 10) // 1
+        # print(i, bai_wei, shi_wei, geg_wei)
+        if bai_wei**3 + shi_wei**3 + geg_wei**3 == i:
+            print(i)
+
+1. ```py
+   for i in range(101, 201):
+
+    for yin_shu in range(2, i):
+        if i % yin_shu == 0:
+            break
+    else:
+        print(i)
+   ```
 
 4.
 
@@ -101,23 +95,23 @@ c = height / (tall**2)
 c = float('%.1f' % c)
 print(type(c), c)
 if c < 18.5:
-	print("过轻")
+    print("过轻")
 if 18.5 <= c <= 23.9:
-	print("正常")
+    print("正常")
 if 24 <= c <= 27:
-	print("过重")
+    print("过重")
 if 28 <= c <= 32:
-	print("肥胖")
+    print("肥胖")
 if 32 < c:
-	print("非常肥胖")
+    print("非常肥胖")
 ```
 
 5.
 
 ```py
 for i in range(1, 101):
-	if i % 2 == 1:
-		print(i)
+    if i % 2 == 1:
+        print(i)
 ```
 
 
