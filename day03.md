@@ -40,8 +40,6 @@
 参考答案：
 
 1. 
-
-
 ```py
 I = float(input("请输入当月利润(单位w元):"))
 bonus = 0
@@ -62,28 +60,24 @@ print("应发奖金%f " % bonus)
 
 
 
+2.
 
 
-    2. 
 
-    ```py
-    for i in range(100, 1000):
-        bai_wei = i // 100
-        shi_wei = (i-bai_wei*100) // 10
-        geg_wei = (i - bai_wei*100 - shi_wei * 10) // 1
-        # print(i, bai_wei, shi_wei, geg_wei)
-        if bai_wei**3 + shi_wei**3 + geg_wei**3 == i:
-            print(i)
+```py
 
-1. ```py
-   for i in range(101, 201):
+for i in range(100, 1000):
+	bai_wei = i // 100
+	shi_wei = (i-bai_wei*100) // 10
+	geg_wei = (i - bai_wei*100 - shi_wei * 10) // 1
+	# print(i, bai_wei, shi_wei, geg_wei)
+	if bai_wei**3 + shi_wei**3 + geg_wei**3 == i:
+		print(i)
+```
 
-    for yin_shu in range(2, i):
-        if i % yin_shu == 0:
-            break
-    else:
-        print(i)
-   ```
+
+
+
 
 4.
 
