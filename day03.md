@@ -15,7 +15,17 @@
 
 # 练习题
 编程题：
-    1. 
+    1. (if-elif-else)
+    2. (if-elif-else)
+    3. (if-elif-else)
+    4. (while)
+    5. (while)
+    6. (for)
+    7. (for)
+    8. (break)
+    9. (continue)
+    10. (综合)
+    
 # 参考答案
 
 
