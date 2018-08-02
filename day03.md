@@ -8,11 +8,14 @@
 5. 和同桌讨论今天遇到的bug
 
 # 学习目标
-掌握if-else语句的使用
-
+掌握if-elif-else语句的使用
+掌握while循环语句
+掌握for循环语句
+掌握break 和contiune使用
 
 # 练习题
-
+编程题：
+    1. 
 # 参考答案
 
 
