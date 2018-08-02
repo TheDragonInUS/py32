@@ -39,40 +39,49 @@
 
 参考答案：
 
-1. 
-```py
-I = float(input("请输入当月利润(单位w元):"))
-bonus = 0
-if I <= 10:
+1. ```py
+   I = float(input("请输入当月利润(单位w元):"))
+   bonus = 0
+   if I <= 10:
     bonus = I  0.10
-elif 20 >I> 10:
+   elif 20 >I> 10:
     bonus = 10  0.10 + (I-10) 0.075
-elif 40 >I>= 20:
+   elif 40 >I>= 20:
     bonus = 10  0.10 + 10 0.75 + (I-20)0.05 
-elif 60 >I>= 40:
+   elif 60 >I>= 40:
     bonus = 10  0.10 + 10 0.75 + 200.05 + (I-40)  0.03
-elif 100 >I>= 60:
+   elif 100 >I>= 60:
     bonus = 10  0.10 + 10 0.75 + 200.05 + 20  0.03 + (I-60) 0.015
-elif 100 >I:
+   elif 100 >I:
     bonus = 10  0.10 + 10 0.75 + 200.05 + 20  0.03 + 40  0.015 + (I-100) * 0.01
-print("应发奖金%f " % bonus)
+   print("应发奖金%f " % bonus)
+   ```
+
+2.
+
+```py
+for i in range(100, 1000):
+    bai_wei = i // 100
+    shi_wei = (i-bai_wei*100) // 10
+    geg_wei = (i - bai_wei*100 - shi_wei * 10) // 1
+    # print(i, bai_wei, shi_wei, geg_wei)
+    if bai_wei**3 + shi_wei**3 + geg_wei**3 == i:
+        print(i)
 ```
 
 
 
-2.
-
-
+3.
 
 ```py
+for i in range(101, 201):
 
-for i in range(100, 1000):
-	bai_wei = i // 100
-	shi_wei = (i-bai_wei*100) // 10
-	geg_wei = (i - bai_wei*100 - shi_wei * 10) // 1
-	# print(i, bai_wei, shi_wei, geg_wei)
-	if bai_wei**3 + shi_wei**3 + geg_wei**3 == i:
+	for yin_shu in range(2, i):
+		if i % yin_shu == 0:
+			break
+	else:
 		print(i)
+
 ```
 
 
