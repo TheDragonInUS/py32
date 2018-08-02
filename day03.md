@@ -79,12 +79,12 @@ for i in range(100, 1000):
 ```py
 f = 0
 for i in range(101, 201):
-	for yin_shu in range(2, i):
-		if i % yin_shu == 0:
-			break
-	else:
-		f += 1
-		print(i)
+    for yin_shu in range(2, i):
+        if i % yin_shu == 0:
+            break
+    else:
+        f += 1
+        print(i)
 print("素数个数为:%d" % f)
 ```
 
