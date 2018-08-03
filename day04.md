@@ -33,8 +33,6 @@ str1 = “1234567890”
 
 1.
 
-
-
 ```py
 str1 = '1234567890'
 print(str1[0:2])
@@ -45,7 +43,28 @@ print(str1[-3:])
 print(str1[:])
 print(str1[0:10])
 print(str1)
+```
 
+2.
+
+
+
+```py
+#方法一：
+a = str1.split("@")
+print(a)
+sum1 = 0
+for i in a:
+	sum1 += int(i)
+print(sum1)
+
+#方法二：
+a = int(str1[0:2])
+b = int(str1[3:5])
+c = int(str1[6:8])
+d = int(str1[9:10])
+e = int(str1[11:12])
+print(a + b + c + d + e)
 ```
 
 
