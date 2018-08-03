@@ -49,6 +49,7 @@ print(str1)
 
 ```py
 #方法一：
+str1 = "10@20@30@4@6"
 a = str1.split("@")
 print(a)
 sum1 = 0
@@ -57,12 +58,19 @@ for i in a:
 print(sum1)
 
 #方法二：
+str1 = "10@20@30@4@6"
 a = int(str1[0:2])
 b = int(str1[3:5])
 c = int(str1[6:8])
 d = int(str1[9:10])
 e = int(str1[11:12])
 print(a + b + c + d + e)
+
+#方法三
+str1 = "10@20@30@4@6"
+a = str1.replace("@", "+")
+b=eval(a)
+print(b)
 ```
 
 3.
@@ -74,8 +82,6 @@ for i in str1:
     if i % 2 == 0 and i != 0:
         print(i)
 ```
-
-
 
 
 
