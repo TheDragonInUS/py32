@@ -47,15 +47,13 @@ print(str1)
 
 2.
 
-
-
 ```py
 #方法一：
 a = str1.split("@")
 print(a)
 sum1 = 0
 for i in a:
-	sum1 += int(i)
+    sum1 += int(i)
 print(sum1)
 
 #方法二：
@@ -65,6 +63,43 @@ c = int(str1[6:8])
 d = int(str1[9:10])
 e = int(str1[11:12])
 print(a + b + c + d + e)
+```
+
+3.
+
+```py
+
+str1 = '1234567890'
+for i in str1:
+	i = int(i)
+	if i % 2 == 0 and i != 0:
+		print(i)
+```
+
+4.
+
+
+
+```py
+list = ['xiaoming', 'xiaohua', 'xiaohong']
+for i in list:
+	print(i)
+
+
+list = ['xiaoming', 'xiaohua', 'xiaohong']
+list1 = ['jack', 'marry', 'tom']
+for i in list1:
+	list.append(i)
+print(list)
+
+if 'xiaohua' in ['xiaoming', 'xiaohua', 'xiaohong']:
+	print("yes")
+else:
+	print("no")
+#
+
+
+print(len(['xiaoming', 'xiaohua', 'xiaohong']))
 ```
 
 
