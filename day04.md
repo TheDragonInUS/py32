@@ -31,5 +31,22 @@ str1 = “1234567890”
 
 ## 参考答案
 
+1.
+
+
+
+```py
+str1 = '1234567890'
+print(str1[0:2])
+
+print(str1[7:])
+print(str1[-3:])
+
+print(str1[:])
+print(str1[0:10])
+print(str1)
+
+```
+
 
 
