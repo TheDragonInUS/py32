@@ -35,18 +35,19 @@ dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 
 ## 参考答案
 
-1. 
-```
-#(1)
-for i in list:
-    print(i)
-```
+1.
 
-```
+1. ```py
+   #(1)
+   for i in list:
+    print(i)
+   ```
+
+```py
 #(2)方法一
 list1 = ["jack", "marry", "tom"]
 for i in list1:
-	list.append(i)
+    list.append(i)
 # 方法二
 list.extend(list1)
 print(list)
@@ -55,17 +56,48 @@ print(list)
 # 自己尝试insert()
 ```
 
-```
+```py
 #（3）
 if "xiaohua" in list:
-	print("在")
+    print("在")
 else:
-	print("不在")
+    print("不在")
 ```
 
-```
+```py
 # （4）
 print(len(list))
+```
+
+
+
+2. 
+
+```py
+list1 = [1, 3, 4, 5, 7]
+list2 = [0, 66, 8, 9]
+list1.extend(list2)
+list1.sort(reverse=False)
+print(list1)
+```
+
+3. 
+
+```py
+a = {}
+a["name"] = input("name:")
+a["age"] = input("age:")
+a["ID"] = input("ID:")
+print(a)
+```
+
+4. 
+
+```py
+dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
+for i in dict1.keys():
+	if dict1[i] == "itcast":
+		print(i)
 ```
 
 
