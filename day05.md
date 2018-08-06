@@ -40,7 +40,6 @@ dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 #(1)
 for i in list:
  print(i)
-
 ```
 
 ```py
@@ -69,15 +68,17 @@ else:
 print(len(list))
 ```
 
+```py
+# 2 
+list1 = [1, 3, 4, 5, 7]
+list2 = [0, 66, 8, 9]
+list1.extend(list2)
+list1.sort(reverse=False)
+print(list1)
+
+```
+
 1. ```py
-   # 2 
-   list1 = [1, 3, 4, 5, 7]
-   list2 = [0, 66, 8, 9]
-   list1.extend(list2)
-   list1.sort(reverse=False)
-   print(list1)
-   ```
-2. ```py
    # 3
    a = {}
    a["name"] = input("name:")
@@ -85,7 +86,7 @@ print(len(list))
    a["ID"] = input("ID:")
    print(a)
    ```
-3. ```py
+2. ```py
    #4
    dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
    for i in dict1.keys():
