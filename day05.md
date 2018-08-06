@@ -35,8 +35,6 @@ dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 
 ## 参考答案
 
-1.
-
 1. ```py
    #(1)
    for i in list:
@@ -69,20 +67,14 @@ else:
 print(len(list))
 ```
 
-
-
+1. ```py
+   list1 = [1, 3, 4, 5, 7]
+   list2 = [0, 66, 8, 9]
+   list1.extend(list2)
+   list1.sort(reverse=False)
+   print(list1)
+   ```
 2. 
-
-```py
-list1 = [1, 3, 4, 5, 7]
-list2 = [0, 66, 8, 9]
-list1.extend(list2)
-list1.sort(reverse=False)
-print(list1)
-```
-
-3. 
-
 ```py
 a = {}
 a["name"] = input("name:")
@@ -91,14 +83,12 @@ a["ID"] = input("ID:")
 print(a)
 ```
 
-4. 
-
-```py
-dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
-for i in dict1.keys():
-	if dict1[i] == "itcast":
-		print(i)
-```
+1. ```py
+   dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
+   for i in dict1.keys():
+    if dict1[i] == "itcast":
+        print(i)
+   ```
 
 
 
