@@ -16,74 +16,25 @@
 
 ## 今天作业
 
-1. 现有字符串： str1 = '1234567890'，根据题目要求完成以下题目：
+1.完成下列操作
+list = [“xiaoming”,”xiaohua”,”xiaohong”]
+(1)	循环遍历出列表的所有元素
+(2)	把列表list1[“jack”,”marry”,”tom”]中的每个元素逐一添加到list列表中
+(3)	查看list列表是否有“xiaohua”这个元素
+(4)	查看list列表的长度
 
-（1）截取字符串的第一位到第三位的字符
+2.将下列两个列表合并，将合并后的列表升序并输出.
+list1 = [1,3,4,5,7]
+list2 = [0,66,8,9]
 
-（2）截取字符串最后三位的字符
+3.使用字典来存储一个人的信息(姓名、年龄[数字]、学号)，
+这些信息来自键盘的输入，储存完输出至终端.
 
-（3）截取字符串的全部字符
-
-2.将下列字符串中所有的数字相加，相加完毕的结果输出至终端.  
-   str = “10@20@30@4@6”
-
-3.输出字符串str1中所有的偶数.
-
-str1 = “1234567890”
+4.有下列字典dict1,查找值为“itcast”对应的key并输出到终端.(结果应该是输出school)
+dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 
 ## 参考答案
 
-1.
-
-```py
-str1 = '1234567890'
-print(str1[0:2])
-
-print(str1[7:])
-print(str1[-3:])
-
-print(str1[:])
-print(str1[0:10])
-print(str1)
-```
-
-2.
-
-```py
-#方法一：
-str1 = "10@20@30@4@6"
-a = str1.split("@")
-print(a)
-sum1 = 0
-for i in a:
-    sum1 += int(i)
-print(sum1)
-
-#方法二：
-str1 = "10@20@30@4@6"
-a = int(str1[0:2])
-b = int(str1[3:5])
-c = int(str1[6:8])
-d = int(str1[9:10])
-e = int(str1[11:12])
-print(a + b + c + d + e)
-
-#方法三
-str1 = "10@20@30@4@6"
-a = str1.replace("@", "+")
-b=eval(a)
-print(b)
-```
-
-3.
-
-```py
-str1 = '1234567890'
-for i in str1:
-    i = int(i)
-    if i % 2 == 0 and i != 0:
-        print(i)
-```
 
 
 
