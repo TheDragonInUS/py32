@@ -18,10 +18,10 @@
 
 1.完成下列操作
 list = [“xiaoming”,”xiaohua”,”xiaohong”]
-(1)	循环遍历出列表的所有元素
-(2)	把列表list1[“jack”,”marry”,”tom”]中的每个元素逐一添加到list列表中
-(3)	查看list列表是否有“xiaohua”这个元素
-(4)	查看list列表的长度
+(1)循环遍历出列表的所有元素
+(2)把列表list1[“jack”,”marry”,”tom”]中的每个元素逐一添加到list列表中
+(3)查看list列表是否有“xiaohua”这个元素
+(4)查看list列表的长度
 
 2.将下列两个列表合并，将合并后的列表升序并输出.
 list1 = [1,3,4,5,7]
