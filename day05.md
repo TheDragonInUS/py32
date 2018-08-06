@@ -75,18 +75,19 @@ list2 = [0, 66, 8, 9]
 list1.extend(list2)
 list1.sort(reverse=False)
 print(list1)
+```
+
+```
+# 3
+a = {}
+a["name"] = input("name:")
+a["age"] = input("age:")
+a["ID"] = input("ID:")
+print(a)
 
 ```
 
 1. ```py
-   # 3
-   a = {}
-   a["name"] = input("name:")
-   a["age"] = input("age:")
-   a["ID"] = input("ID:")
-   print(a)
-   ```
-2. ```py
    #4
    dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
    for i in dict1.keys():
