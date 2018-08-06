@@ -35,10 +35,38 @@ dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 
 ## 参考答案
 
+1. 
 ```
+#(1)
 for i in list:
-	print(i)
-``` 
+    print(i)
+```
+
+```
+#(2)方法一
+list1 = ["jack", "marry", "tom"]
+for i in list1:
+	list.append(i)
+# 方法二
+list.extend(list1)
+print(list)
+
+# 方法三
+# 自己尝试insert()
+```
+
+```
+#（3）
+if "xiaohua" in list:
+	print("在")
+else:
+	print("不在")
+```
+
+```
+# （4）
+print(len(list))
+```
 
 
 
