@@ -77,23 +77,22 @@ list1.sort(reverse=False)
 print(list1)
 ```
 
-```
+```py
 # 3
 a = {}
 a["name"] = input("name:")
 a["age"] = input("age:")
 a["ID"] = input("ID:")
 print(a)
-
 ```
 
-1. ```py
-   #4
-   dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
-   for i in dict1.keys():
-    if dict1[i] == "itcast":
-        print(i)
-   ```
+```py
+#4
+dict1 = {'school': 'itcast', 'date': 2017, 'address': 'beijing'}
+for i in dict1.keys():
+ if dict1[i] == "itcast":
+     print(i)
+```
 
 
 
