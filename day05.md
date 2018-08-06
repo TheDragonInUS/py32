@@ -35,7 +35,10 @@ dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 
 ## 参考答案
 
-## 
+```
+for i in list:
+	print(i)
+``` 
 
 
 
