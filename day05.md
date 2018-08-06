@@ -30,16 +30,18 @@ list2 = \[0,66,8,9\]
 3.使用字典来存储一个人的信息\(姓名、年龄\[数字\]、学号\)，  
 这些信息来自键盘的输入，储存完输出至终端.
 
-4.有下列字典dict1,查找值为“itcast”对应的key并输出到终端.\(结果应该是输出school\)  
+4.有下列字典dict1,查找值为“itcast”对应的key并输出到终端.\(结果应该是输出school\)
+
 dict1={“school”:“itcast”,“date”:2017,”address”:“beijing”}
 
-## 参考答案
+参考答案
 
-1. ```py
-   #(1)
-   for i in list:
-    print(i)
-   ```
+```
+#(1)
+for i in list:
+ print(i)
+
+```
 
 ```py
 #(2)方法一
@@ -82,7 +84,6 @@ print(len(list))
    a["age"] = input("age:")
    a["ID"] = input("ID:")
    print(a)
-
    ```
 3. ```py
    #4
