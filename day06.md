@@ -102,6 +102,38 @@ print(str_sum("123"))
 #函数返回值：无
 #函数功能：将列表中的小写字母转换为大写字母，大写字母转换为小写字母.
 #例如：[ ‘a’,‘B’，c’] 转换为 [ ‘A’ , ‘b’ , ‘C’]
+
+# 方法一：
+def lower_upper(li_str):
+	for i in range(len(li_str)):
+		flag = li_str[i].islower()
+		
+		if flag == True:
+			li_str[i] = li_str[i].upper()
+		else:
+			li_str[i] = li_str[i].lower()
+	return li_str
+
+print(lower_upper(["a", "D"]))
+
+
+#方法：二
+# 大写字母 [65 ,90]
+# 小写字母 [97 ,122]
+# ord()返回字符ascii码值
+
+
+# def lower_upper(li_str):
+# 	for i in range(len(li_str)):
+# 		flag = ord(li_str[i])
+#
+# 		if 122 >= flag >= 97:
+# 			li_str[i] = li_str[i].upper()
+# 		else:
+# 			li_str[i] = li_str[i].lower()
+# 	return li_str
+
+print(lower_upper(['a','D']))
 ```
 
 ```
