@@ -18,36 +18,63 @@
 
 ```
 #1
-编写函数输出“Hello Python”.
-函数原型：def show():
-函数参数：无
-函数功能：输出“Hello Python”至终端
+#编写函数输出“Hello Python”.
+#函数原型：def show():
+#函数参数：无
+#函数功能：输出“Hello Python”至终端
+
+def show():
+	print("Hello Python")
+show()
 ```
 
 ```
 #2
-编写函数:
-函数原型：def print_double(number):
-函数参数：number (整数)
-函数功能：打印从0到number之间所有的偶数[包含数字0和number]
+#编写函数:
+#函数原型：def print_double(number):
+#函数参数：number (整数)
+#函数功能：打印从0到number之间所有的偶数[包含数字0和number]
+
+def print_double(number):
+	for i in range(0, number+1):
+		if i % 2 == 0:
+			print(i)
+			
+			
+print_double(10)
 ```
 
 ```
 #3
-编写函数:
-函数原型：def mul(num_1,num_2):
-函数参数：num_1，num_2 (两个整数)
-函数返回值：两个数的乘积
-函数功能：计算两个数的乘积并作为返回值
+#编写函数:
+#函数原型：def mul(num_1,num_2):
+#函数参数：num_1，num_2 (两个整数)
+#函数返回值：两个数的乘积
+#函数功能：计算两个数的乘积并作为返回值
+
+def mul(num_1, num_2):
+	a = num_1 * num_2
+	return a
+
+print(mul(3,4))
 ```
 
 ```
 #4
-编写函数：
-函数原型：def isNumber(num):
-函数参数：num (整数)
-函数返回值：bool类型变量
-函数功能：判断一个变量是否为整数，是整数返回True，
+#编写函数：
+#函数原型：def isNumber(num):
+#函数参数：num (整数)
+#函数返回值：bool类型变量
+#函数功能：判断一个变量是否为整数，是整数返回True，
+
+def isNumber(num):
+	if type(num) == int:
+		print("整型")
+		return True
+	else:
+		return False
+		
+print(isNumber("ee"))
 ```
 
 ```
