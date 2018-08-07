@@ -105,14 +105,14 @@ print(str_sum("123"))
 
 # 方法一：
 def lower_upper(li_str):
-	for i in range(len(li_str)):
-		flag = li_str[i].islower()
-		
-		if flag == True:
-			li_str[i] = li_str[i].upper()
-		else:
-			li_str[i] = li_str[i].lower()
-	return li_str
+    for i in range(len(li_str)):
+        flag = li_str[i].islower()
+
+        if flag == True:
+            li_str[i] = li_str[i].upper()
+        else:
+            li_str[i] = li_str[i].lower()
+    return li_str
 
 print(lower_upper(["a", "D"]))
 
@@ -123,15 +123,15 @@ print(lower_upper(["a", "D"]))
 # ord()返回字符ascii码值
 
 
-# def lower_upper(li_str):
-# 	for i in range(len(li_str)):
-# 		flag = ord(li_str[i])
-#
-# 		if 122 >= flag >= 97:
-# 			li_str[i] = li_str[i].upper()
-# 		else:
-# 			li_str[i] = li_str[i].lower()
-# 	return li_str
+def lower_upper(li_str):
+    for i in range(len(li_str)):
+        flag = ord(li_str[i])
+
+         if 122 >= flag >= 97:
+             li_str[i] = li_str[i].upper()
+         else:
+             li_str[i] = li_str[i].lower()
+     return li_str
 
 print(lower_upper(['a','D']))
 ```
