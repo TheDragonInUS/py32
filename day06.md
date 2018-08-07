@@ -16,7 +16,7 @@
 
 ## 今天作业
 
-```
+```py
 #1
 #编写函数输出“Hello Python”.
 #函数原型：def show():
@@ -28,7 +28,7 @@ def show():
 show()
 ```
 
-```
+```py
 #2
 #编写函数:
 #函数原型：def print_double(number):
@@ -44,7 +44,7 @@ def print_double(number):
 print_double(10)
 ```
 
-```
+```py
 #3
 #编写函数:
 #函数原型：def mul(num_1,num_2):
@@ -59,7 +59,7 @@ def mul(num_1, num_2):
 print(mul(3,4))
 ```
 
-```
+```py
 #4
 #编写函数：
 #函数原型：def isNumber(num):
@@ -77,7 +77,7 @@ def isNumber(num):
 print(isNumber("ee"))
 ```
 
-```
+```py
 #5
 #编写函数：
 #函数原型：def str_sum(char_num):
@@ -94,7 +94,7 @@ def str_sum(char_num):
 print(str_sum("123"))
 ```
 
-```
+```py
 #6
 #编写函数：
 #函数原型：def lower_upper(li_str):
@@ -136,7 +136,7 @@ def lower_upper(li_str):
 print(lower_upper(['a','D']))
 ```
 
-```
+```py
 #7
 #编写函数：
 #函数原型：def create_li(n):
@@ -148,10 +148,10 @@ print(lower_upper(['a','D']))
 #print( “列表li的长度为%d” % ( len( li ) ) )
 
 def create_li(n=5):
-	a = []
-	for i in range(n):
-		a.append([])
-	return a
+    a = []
+    for i in range(n):
+        a.append([])
+    return a
 
 print(create_li())
 ```
