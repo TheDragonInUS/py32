@@ -87,21 +87,21 @@ print(isNumber("ee"))
 #  “12345” 的和为15
 
 def str_sum(char_num):
-	sum = 0
-	for i in char_num:
-		sum += int(i)
-	return sum
+    sum = 0
+    for i in char_num:
+        sum += int(i)
+    return sum
 print(str_sum("123"))
 ```
 
 ```
 #6
-编写函数：
-函数原型：def lower_upper(li_str):
-函数参数：li_str (列表)
-函数返回值：无
-函数功能：将列表中的小写字母转换为大写字母，大写字母转换为小写字母.
-例如：[ ‘a’,‘B’，c’] 转换为 [ ‘A’ , ‘b’ , ‘C’]
+#编写函数：
+#函数原型：def lower_upper(li_str):
+#函数参数：li_str (列表)
+#函数返回值：无
+#函数功能：将列表中的小写字母转换为大写字母，大写字母转换为小写字母.
+#例如：[ ‘a’,‘B’，c’] 转换为 [ ‘A’ , ‘b’ , ‘C’]
 ```
 
 ```
