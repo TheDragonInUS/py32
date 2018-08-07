@@ -134,6 +134,35 @@ def lower_upper(li_str):
      return li_str
 
 print(lower_upper(['a','D']))
+
+
+
+# 第三种方法：
+def lower_upper(a):
+	b = []
+	for i in range(len(a)):
+		b.append(a[i-1].upper())
+		b.append(a[i-1].lower())
+	# print(b)
+	for i in a:
+		b.remove(i)
+	print(b)
+
+a = ['a', 'b', 'B']
+lower_upper(a)
+
+
+
+# 第四种方法：
+def lower_upper(li_str):
+	for i, val in enumerate(li_str):
+		if "a" <= val <= "z":
+		    li_str[i] = li_str[i].upper()
+		else:
+		    li_str[i] = li_str[i].lower()
+	return li_str
+
+print(lower_upper(['a','B']))
 ```
 
 ```py
