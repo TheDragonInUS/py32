@@ -146,6 +146,14 @@ print(lower_upper(['a','D']))
 #例如：
 #i = create_li()
 #print( “列表li的长度为%d” % ( len( li ) ) )
+
+def create_li(n=5):
+	a = []
+	for i in range(n):
+		a.append([])
+	return a
+
+print(create_li())
 ```
 
 
