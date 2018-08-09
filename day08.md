@@ -23,14 +23,7 @@
 
 ```py
 #1
-#编写函数输出“Hello Python”.
-#函数原型：def show():
-#函数参数：无
-#函数功能：输出“Hello Python”至终端
 
-def show():
-    print("Hello Python")
-show()
 ```
 
 ```py
