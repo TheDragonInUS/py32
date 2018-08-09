@@ -125,7 +125,7 @@ def fun2():
 ```
 
 ```
-#8.
+#8
  def login(uname, pwd):
 
  if uname == "python" and pwd == 123456:
@@ -140,7 +140,46 @@ login(uname, pwd)
 
 ```
 
+```
+#9
+def getinfo():
 
+    info_list = []
+
+    for i in  range(0,5):
+        info = {}
+
+        info["name"] = input("请输入name:")
+        info["age"] = input("请输入age:")
+        info["id"] = input("请输入id:")
+
+        info_list.append(info)
+
+    print(info_list)
+
+
+getinfo()
+
+```
+
+```
+#10
+def panduan(N):
+      if N > 0:
+          if N % 2 == 0:
+              return "%d是偶数" % N
+          else:
+              return "%d是奇数" % N
+      else:
+          return "请输入大于0的整数"
+
+
+  N = int(input("请输入数字:"))
+
+  res = panduan(N)
+  print(res)
+
+```
 
 
 
