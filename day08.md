@@ -45,6 +45,7 @@ print(ou_shu(100))
 ```py
 #3 定义一个匿名函数，产生1-100偶数和？
 a = lambda x: x+a(x-2) if x> 2 else 2
+print(a(100))
 ```
 
 ```py
@@ -79,7 +80,7 @@ def cun_chu():
     a['age'] = input("age:")
     a['gender'] = input("gender:")
     a['addr'] = input("addr:")
-    
+
     with open("2.txt", 'w')as f:
         f.write(str(a))
 cun_chu()
