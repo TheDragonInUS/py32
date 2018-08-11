@@ -14,4 +14,5 @@
 * [day11](day11.md)
 * [day12](day12.md)
 * [day13](day13.md)
+* [基础班阶段测试题](ji-chu-ban-jie-duan-ce-shi-ti.md)
 
