@@ -23,6 +23,38 @@
 
 ```py
 #1创造一个文件book.txt 使用循环写入100行‘媳妇我错了’，然后进行文件备份，要求使用函数实现，函数有返回值“ok”。
+def han_t(f):
+    """
+    循环写入文件
+    :param f: 文件对象
+    :return: 返回ok状态
+    """
+    for i in range(1, 101):
+        f.write("%d hello world\n" % i)
+    return "ok"
+
+
+def copy_file(file_path, copy_file_path):
+    """
+     复制文件路径
+     :param file_path: 原文件路径
+     :param copy_file_path: 复制文件路径
+     :return: 信息"copy is over"
+     """
+    with open(file_path, 'r') as fa:
+        with open(copy_file_path, 'a')as fb:
+            while True:
+                fa_con = fa.readline()
+                if fa_con == '':
+                    print("copy is over")
+                    return "copy is over"
+                fb.write(fa_con)
+
+
+if __name__ == '__main__':
+    with open('./book.txt', 'w') as f:
+        han_t(f)
+    copy_file('./book.txt', './book_copy.txt')
 ```
 
 ```py
@@ -41,8 +73,6 @@
 ```py
 #5.定义一个类，智能手机类，要求有打电话功能，短信功能，视频功能，定义后，创建一个实例对象，添加颜色属性，尺寸。
 ```
-
-
 
 
 
