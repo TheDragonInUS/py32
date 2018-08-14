@@ -60,6 +60,34 @@ if __name__ == '__main__':
 ```py
 #2，将函数改良，添加额外功能，要求可以在桌面my_code文件夹文件中创建100个.txt文件，并在每个文件中写入100行“hello world”
 # 创建完成后将文件的名字和路径，保存在My_code文件夹下的hello.txt文件中.
+
+import os
+
+def han_t(f):
+    """
+    循环写入文件
+    :param f: 文件对象
+    :return: 返回ok状态
+    """
+    for i in range(1, 101):
+        f.write("%d hello world\n" % i)
+    return "ok"
+
+
+os.chdir("/Users/python/Desktop/")
+if 'my_code' not in os.listdir():
+    os.mkdir('my_code')
+os.chdir("/Users/python/Desktop/my_code")
+for i in range(0, 100):
+    file_name = str(i) + ".txt"
+    with open(file_name, 'w') as f:
+        han_t(f)
+        with open("hello.txt", 'a') as f_h:
+            con = file_name + ' ' + os.getcwd() + '\n'
+            f_h.write(con)
+        
+
+print(os.listdir())
 ```
 
 ```py
