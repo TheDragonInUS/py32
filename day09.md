@@ -77,7 +77,7 @@ def han_t(f):
 os.chdir("/Users/python/Desktop/")
 if 'my_code' not in os.listdir():
     os.mkdir('my_code')
-os.chdir("/Users/python/Desktop/my_code")
+os.chdir("/Users/python/Desktop/my_code") #  这个路径改成你自己的路径
 for i in range(0, 100):
     file_name = str(i) + ".txt"
     with open(file_name, 'w') as f:
@@ -85,13 +85,15 @@ for i in range(0, 100):
         with open("hello.txt", 'a') as f_h:
             con = file_name + ' ' + os.getcwd() + '\n'
             f_h.write(con)
-        
+
 
 print(os.listdir())
 ```
 
 ```py
 #3. 删除文件夹my_code中的文件，并将删除动作记录在hello.log文件中
+
+
 ```
 
 ```py
