@@ -135,23 +135,25 @@ if __name__ == '__main__':
 ```py
 #4.完成学生管理系统，文件写入
 略
+
+
 ```
 
 ```py
 #5.定义一个类，智能手机类，要求有打电话功能，短信功能，视频功能，定义后，创建一个实例对象，添加颜色属性，尺寸。
 
 class Phone(object):
-    
+
     def call(self):
         print("this is call ")
-        
+
     def send_message(self):
         print("this is send_message ")
-    
+
     def video(self):
         print("this is video ")
-    
-    
+
+
 iphone = Phone()
 iphone.call()
 iphone.send_message()
