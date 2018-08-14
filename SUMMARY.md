@@ -9,7 +9,7 @@
 * [day06](day06.md)
 * [day07](day07.md)
 * [day08](day08.md)
-* [day09](day08.md)
+* [day09](day09.md)
 * [day10](day10.md)
 * [day11](day11.md)
 * [day12](day12.md)
