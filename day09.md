@@ -94,6 +94,42 @@ print(os.listdir())
 #3. 删除文件夹my_code中的文件，并将删除动作记录在hello.log文件中
 
 
+import os
+
+
+def tiqu_shu(f):
+    con = f.readline()
+    print(con)
+    if con == '':
+        print("over")
+        return 'over'
+    con = con.split("\n")
+    con = con[0]
+    return con
+
+
+def rm_han(file_path):
+    os.remove(file_path)
+    import time
+    time_w = time.ctime()
+    info = "已经删除" + file_path + ' ' + time_w + '\n'
+    return info
+
+
+def log_han(info):
+    with open("./hello.log", 'a') as f:
+        f.write(info)
+    return "ok"
+
+
+if __name__ == '__main__':
+    with open("/Users/python/Desktop/my_code/hello.txt", 'r') as f:
+        while True:
+            con = tiqu_shu(f)
+            if con == 'over':
+                break
+            info = rm_han(con)
+            log_han(info)
 ```
 
 ```py
