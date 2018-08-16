@@ -130,13 +130,9 @@ if __name__ == '__main__':
                 break
             info = rm_han(con)
             log_han(info)
-            
 ```
 
 ```py
- 
- 
- 
 #4.完成学生管理系统，文件写入
 """
 学生管理系统文件版v1.0
@@ -155,7 +151,7 @@ def stu_dict_():
     name = input("name:")
     age_ = input(" age:")
     qq__ = input(" qq :")
-    
+
     dic_a["name"] = name
     dic_a["age_"] = age_
     dic_a["qq__"] = qq__
@@ -189,41 +185,41 @@ def stu_chose():
     """
     chose = int(input("请输入选项:"))
     if chose == 1:
-        
+
         #  添加学生信息
         f = stu_dict_()
         stu_add(f)
-        
+
     elif chose == 2:
-        
+
         #  删除学生信息
         stu_del()
-        
+
     elif chose == 3:
-    
+
         #  3:修改学生
         stu_modify()
-    
+
     elif chose == 4:
-    
+
         # 4: 查询学生
         stu_find()
-        
+
     elif chose == 5:
-        
+
         # 5:显示所有学生
         stu_show()
-    
+
     elif chose == 6:
-    
+
         # 6:保存数据
         stu_save(file_path)
-        
+
     elif chose == 7:
-        
+
         # 7 退出程序
         stu_exit()
-        
+
 
 def stu_add(key_value):
     """
@@ -232,7 +228,7 @@ def stu_add(key_value):
     :return: 返回
     """
     a[key_value[0]] = key_value[1]
-    
+
     return "ok"
 
 
@@ -256,7 +252,7 @@ def stu_modify():
                 "please input name : ")
     f = stu_dict_()
     a[key] = f[1]
-    
+
     return "modify  %s success" % key
 
 
@@ -267,9 +263,9 @@ def stu_find():
     """
     key = input("who's info do you want to search? \n "
                 "please input name : ")
-    
+
     print(a[key])
-    
+
     return "search  %s success" % key
 
 
@@ -279,7 +275,7 @@ def stu_show():
     :return:
     """
     print(a)
-    
+
     return "show all  success"
 
 
@@ -299,8 +295,8 @@ def stu_save(file_path):
     """
     with open(file_path, 'w') as f:
         f.write(str(a))
-        
-        
+
+
 def stu_load(file_path):
     """
     加载文件信息，返回文件内容
@@ -353,10 +349,10 @@ def stu_init(path):
         stu_save(file_path)
     file_con = stu_load(file_path)  # 存在的读取文件内容，
     a = stu_co_p(file_con)  # 还原给a全局信息字典
-    
+
     print(a)  # 查看全局 a 信息字典，加载情况
-    
-    
+
+
 if __name__ == '__main__':
     """
     1. 判断文件是否存在
@@ -364,14 +360,11 @@ if __name__ == '__main__':
        2- 文件 存在    加载文件内容
     2. 判断文件内容是否有有效
     """
-    
+
     stu_init("./info.txt")
     while True:
         stu_print()
         stu_chose()
-    
-
-
 ```
 
 ```py
@@ -401,5 +394,5 @@ print(iphone.col)
 print(iphone.size)
 ```
 
-
+第四题程序总览![](/assets/学生管理系统.png)
 
