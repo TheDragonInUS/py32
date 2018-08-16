@@ -99,7 +99,29 @@ print(a.gender)
 #3 定义一个学生类，属性为姓名，性别，分数，定义一个save方法，可以保存把对象的属性保存到信息文件中，打印对对象的时候可以把学生的
 #基本信息打印出来
 
+class Student(object):
+    
+    def __init__(self, name__, score_, gender, file_path):
+        self.name__ = name__
+        self.score_ = score_
+        self.gender = gender
+        self.info_path = file_path
+        
+    def save(self):
+        with open(self.info_path, 'w') as f:
+            con = str(self.score_) + " " + str(self.name__) + " " + str(self.gender)
+            f.write(con)
+            print("ok")
+    
+    def __str__(self):
+        with open(self.info_path, 'r') as f:
+            con = f.read()
+            return con
 
+
+a = Student('1', 12, '男', "./info.txt")
+a.save()
+print(a)
 ```
 
 ```py
