@@ -35,20 +35,19 @@ class People(object):
         self.height = height
         self.high__ = high
         self.gender = gender
-    
+
     def run(self):
         print("runing")
-    
+
     def cast(self):
         print("casting")
-    
+
     def speak(self):
         print("speaking")
 
 
 liming = People(12, 21, 12)
 print(liming.height)
-
 ```
 
 ```py
@@ -59,18 +58,18 @@ class People(object):
     """
         人类
     """
-    
+
     def __init__(self, height, high, gender):
         self.height = height
         self.high__ = high
         self.gender = gender
-    
+
     def run(self):
         print("runing")
-    
+
     def cast(self):
         print("casting")
-    
+
     def speak(self):
         print("speaking")
 
@@ -79,15 +78,15 @@ class Student(People):
     def __init__(self, score_, number, height, high, gender):
         self.score_ = score_
         self.number = number
-        
+
         # super().__init__(height, high, gender)
         # 或者使用
         People.__init__(self, height, high, gender)
-        
+
     def __str__(self):
         return "day day up"
-    
-    
+
+
 a = Student(3.6, 130803050, 140, 150, "男")
 print(a.score_)
 print(a.number)
@@ -99,6 +98,8 @@ print(a.gender)
 ```py
 #3 定义一个学生类，属性为姓名，性别，分数，定义一个save方法，可以保存把对象的属性保存到信息文件中，打印对对象的时候可以把学生的
 #基本信息打印出来
+
+
 ```
 
 ```py
