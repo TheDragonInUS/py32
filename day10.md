@@ -100,19 +100,19 @@ print(a.gender)
 #基本信息打印出来
 
 class Student(object):
-    
+
     def __init__(self, name__, score_, gender, file_path):
         self.name__ = name__
         self.score_ = score_
         self.gender = gender
         self.info_path = file_path
-        
+
     def save(self):
         with open(self.info_path, 'w') as f:
             con = str(self.score_) + " " + str(self.name__) + " " + str(self.gender)
             f.write(con)
             print("ok")
-    
+
     def __str__(self):
         with open(self.info_path, 'r') as f:
             con = f.read()
@@ -126,6 +126,8 @@ print(a)
 
 ```py
 #4.将学生管理系统使用类实现
+
+
 ```
 
 ```py
