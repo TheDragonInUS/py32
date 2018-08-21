@@ -51,6 +51,12 @@
         B. 5
         C. 8
         D. an exception is thrown
+    
+    9. 在python中，修改全局变量的关键字是：（）
+        A. class
+        B. methos
+        C.global
+        D. categroy
         
         
 二.多选题
