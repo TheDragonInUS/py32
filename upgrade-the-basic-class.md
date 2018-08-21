@@ -106,6 +106,13 @@
 PS：用户只有3次登录校验的机会，第3次登录失败则结束程序。
 
 
+19、
+1、定义一个Father类，创建Farther实例对象时需要初始化age、name属性，
+调用get_age方法打印age的值、调用get_name方法打印name的值。
+2、定义一个Son类，继承Farther的所有属性和方法，并重写get_name方法，要求打印name和age的值。
+3、创建Son类的实例对象，name为小明，age为18，调用它的get_age方法和get_name方法。
+
+
 
 
 
