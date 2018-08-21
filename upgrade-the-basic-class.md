@@ -42,7 +42,15 @@
         A. typeof
         B. type
         C. method
-        D. categroy 
+        D. categroy
+         
+    8. list1 = [1,2,3,4]
+        list2 = [5,6,7,8]
+        print(len(list1 + lsit2))结果是（）
+        A. 2
+        B. 5
+        C. 8
+        D. an exception is thrown
         
         
 二.多选题
