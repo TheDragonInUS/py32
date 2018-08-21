@@ -15,4 +15,5 @@
 * [day12](day12.md)
 * [day13](day13.md)
 * [基础班阶段测试题](ji-chu-ban-jie-duan-ce-shi-ti.md)
+* [Upgrade the basic class](upgrade-the-basic-class.md)
 
